@@ -102,7 +102,16 @@
 
 <div class="row">
 
-<div class="col-md-4">
+    <div class="col-md-4">
+          <div class="main-box mb-pink">
+              <a href="home_customer.php">
+                  <i class="fa fa-user fa-5x"></i>
+                  <h5>Customer</h5>
+              </a>
+          </div>
+    </div>
+
+    <div class="col-md-4">
           <div class="main-box mb-pink">
               <a href="home_employee.php">
                   <i class="fa fa-users fa-5x"></i>
@@ -110,9 +119,6 @@
               </a>
           </div>
     </div>
-
-
-
 
     <div class="col-md-4">
           <div class="main-box mb-dull">

@@ -16,7 +16,7 @@ include("php/headerCompany.php");
 
 <div class="row">
     <div class="col-md-12">
-        <h1 class="page-head-line">Company</h1>
+        <h1 class="page-head-line">Supplier</h1>
         <h1 class="page-subhead-line">Welcome to <strong><?php echo ' '. $siteName ?></strong> Today is:
         <i class="icon-calendar icon-large" ></i>
 
@@ -34,8 +34,8 @@ include("php/headerCompany.php");
     <div class="well bs-component">
         <form class="form-horizontal">
             <fieldset>
-                <button type="button" data-toggle="modal" data-target="#addCompany" class="btn btn-success">Add New Company</button>
-                <p align="center"><big><b>List of Companies</b></big></p>
+                <button type="button" data-toggle="modal" data-target="#addCompany" class="btn btn-success">Add New Supplier</button>
+                <p align="center"><big><b>List of Suppliers</b></big></p>
                 <div class="table-responsive">
                     <form method="post" action="" >
 
@@ -43,7 +43,7 @@ include("php/headerCompany.php");
                             <!-- <h3><b>Ordinance</b></h3> -->
                             <thead>
                             <tr class="info">
-                                <th><p align="center">Name/Number</p></th>
+                                <th><p align="center">Name/Phone Number</p></th>
                                 <th><p align="center">Address</p></th>
                                 <th><p align="center">details</p></th>
                                 <th><p align="center">Action</p></th>
@@ -82,7 +82,7 @@ include("php/headerCompany.php");
                             </tbody>
 
                             <tr class="info">
-                                <th><p align="center">Name/Number</p></th>
+                                <th><p align="center">Name/Phone Number</p></th>
                                 <th><p align="center">Address</p></th>
                                 <th><p align="center">details</p></th>
                                 <th><p align="center">Action</p></th>
@@ -102,15 +102,15 @@ include("php/headerCompany.php");
             <div class="modal-content">
                 <div class="modal-header" style="padding:20px 50px;">
                     <button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
-                    <h3 align="center"><b>Add Company</b></h3>
+                    <h3 align="center"><b>Add Supplier</b></h3>
                 </div>
                 <div class="modal-body" style="padding:40px 50px;">
 
                     <form class="form-horizontal" action="#" name="form" method="post">
                         <div class="form-group">
-                            <label class="col-sm-4 control-label">Company Name</label>
+                            <label class="col-sm-4 control-label">Supplier Name</label>
                             <div class="col-sm-8">
-                                <input type="text" name="name" class="form-control" placeholder="Company name" required="required">
+                                <input type="text" name="name" class="form-control" placeholder="Supplier name" required="required">
                             </div>
                         </div>
                         <div class="form-group">
@@ -120,15 +120,15 @@ include("php/headerCompany.php");
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label">Mobile</label>
+                            <label class="col-sm-4 control-label">Phone Number</label>
                             <div class="col-sm-8">
-                                <input type="text" name="mobile" class="form-control" placeholder="Mobile No" required="required">
+                                <input type="text" name="mobile" class="form-control" placeholder="Phone Number" required="required">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Details</label>
                             <div class="col-sm-8">
-                                <input type="textarea" rows="4" cols="30" name="details" class="form-control" placeholder="Company Details" required="required">
+                                <input type="textarea" rows="4" cols="30" name="details" class="form-control" placeholder="Supplier Details" required="required">
                             </div>
                         </div>
 

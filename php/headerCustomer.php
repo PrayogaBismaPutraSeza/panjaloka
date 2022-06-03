@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Responsive ERP</a>
+                <a class="navbar-brand" href="index.php">Panjala Grup</a>
             </div>
 
         </nav>
