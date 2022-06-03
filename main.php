@@ -25,7 +25,7 @@
                             }
 
                              ?>
-                            <a class="btn btn-primary btn-lg " align="center" href="home_cash.php"><strong>Total Cash : </strong> <?php echo $total_cash; ?> tk.</a>
+                            <a class="btn btn-primary btn-lg " align="center" href="home_cash.php"><strong>Total Cash : Rp.</strong> <?php echo $total_cash; ?> </a>
 
                           </div>
 
@@ -53,7 +53,7 @@
                               $deduction = $deduction +$row["d_amount"];
                             }
                              ?>
-                            <a class="btn btn-primary btn-lg " align="center" href="dailyTransactions.php"><strong>Total Cost : </strong><?php echo $total_cost?> tk.</a>
+                            <a class="btn btn-primary btn-lg " align="center" href="dailyTransactions.php"><strong>Total Cost : Rp.</strong><?php echo $total_cost?> </a>
 
                           </div>
                           <div class="col-sm-3 bg-info">
@@ -74,11 +74,11 @@
                             }
 
                              ?>
-                            <a class="btn btn-primary btn-lg " align="center" href="home_payment.php"><strong>Salary Paid : </strong><?php echo $total_salary."+".$deduction; ?> tk.</a>
+                            <a class="btn btn-primary btn-lg " align="center" href="home_payment.php"><strong>Salary Paid : Rp.</strong><?php echo $total_salary."+".$deduction; ?> </a>
 
                           </div>
                           <div class="col-sm-3 bg-info">
-                            <a class="btn btn-primary btn-lg w-600" align="center" href="#"><strong>Extra : </strong> <?php echo $total_cash - $total_cost; ?> tk.</a>
+                            <a class="btn btn-primary btn-lg w-600" align="center" href="#"><strong>Extra : Rp.</strong> <?php echo $total_cash - $total_cost; ?> </a>
 
                           </div>
                         </div>
@@ -171,6 +171,7 @@
                     <div class="panel-body">
                       <div class="main-box bg-info">
                       <h5>
+                      Rp. 
                       <?php
                       $total_paid = 0;
                       $query  = "SELECT * from payment";
@@ -181,7 +182,7 @@
                       }
                       echo $total_paid;
                        ?>
-                        tk paid
+                         paid
                       </h5>
                       </div>
                       </div>
@@ -200,6 +201,7 @@
                             <div class="panel-body">
                               <div class="main-box bg-info">
                               <h5>
+                              Rp. 
                               <?php
                               $total_received = 0;
                               $query  = "SELECT * from companybill";
@@ -210,7 +212,7 @@
                               }
                               echo $total_received;
                                ?>
-                                tk received
+                                received
                                 </h5>
                                 </div>
                             </div>
@@ -226,11 +228,12 @@
                                     <div class="panel-body">
                                       <div class="main-box bg-info">
                                       <h5>
+                                      Rp. 
                                       <?php
 
                                       echo $total_received - $total_paid;
                                        ?>
-                                        tk
+                                        
                                       </h5>
                                       </div>
                                     </div>
@@ -251,6 +254,7 @@
                     <div class="panel-body">
                       <div class="main-box bg-primary">
                       <h5>
+                        Rp. 
                         <?php
                         $total_paid = 0;
                         $query  = "SELECT paid_in_bkash from payment";
@@ -261,7 +265,7 @@
                         }
                         echo $total_paid;
                          ?>
-                          tk paid
+                          paid
                       </h5>
                       </div>
                     </div>

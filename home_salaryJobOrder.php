@@ -38,7 +38,7 @@ include("php/headerSalary.php");
 
 
                       <?php
-                      date_default_timezone_set("Asia/Dhaka");
+                      date_default_timezone_set("Asia/Jakarta");
                       echo  date(" l, F d, Y") . "<br>";
 
                       ?>

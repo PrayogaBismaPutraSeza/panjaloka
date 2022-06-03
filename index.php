@@ -11,7 +11,7 @@ include("php/header.php");
                       <i class="icon-calendar icon-large" ></i>
                       
                       <?php
-                      date_default_timezone_set("Asia/Dhaka");
+                      date_default_timezone_set("Asia/Jakarta");
                       echo  date(" l, F d, Y") . "<br>";
 
                       ?>
@@ -33,9 +33,15 @@ include("php/header.php");
     </div>
     <!-- /. WRAPPER  -->
 
-    <div id="footer-sec">
-       Online School Fees Payment System | Developed By : <a href="" target="_blank">Create Networks NG</a>
+    <!-- Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/">
+            <strong> MDBootstrap.com</strong>
+        </a>
+        <p align="center">About the <a target="_blank" href="https://www.facebook.com/anupamhayatbd">Developer</a></p>
     </div>
+    <!--/.Copyright -->
 
    <script src="js/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP SCRIPTS -->

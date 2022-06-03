@@ -10,7 +10,7 @@
 
     <script>
         <!--
-        var ScrollMsg= "Payroll and Management System - "
+        var ScrollMsg= "Responsive ERP"
         var CharacterPosition=0;
         function StartScrolling() {
             document.title=ScrollMsg.substring(CharacterPosition,ScrollMsg.length)+

@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">TPI Payment System</a>
+                <a class="navbar-brand" href="index.php">Responsive ERP</a>
             </div>
 
         </nav>
@@ -36,7 +36,11 @@
                     </li>
 
 					 <li>
-                        <a class="active-menu" href="home_company.php"><i class="fa fa-university "></i>Company</a>
+                        <a class="active-menu" href="home_company.php"><i class="fa fa-university "></i>Supplier</a>
+                    </li>
+
+                    <li>
+                        <a href="home_customer.php"><i class="fa fa-user "></i>Customer</a>
                     </li>
 
 					 <li>

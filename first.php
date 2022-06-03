@@ -2,7 +2,7 @@
 include("php/dbconnect.php");
 include("php/checklogin.php");
 global $siteName;
-$siteName = "M/S Jahid Printers."
+$siteName = "Responsive ERP"
 
 ?>
 
@@ -11,7 +11,7 @@ $siteName = "M/S Jahid Printers."
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online School Fees Payment System</title>
+    <title>Responsive ERP</title>
 
 
     <?php
@@ -30,7 +30,7 @@ $siteName = "M/S Jahid Printers."
     </script>
     <script>
         <!--
-        var ScrollMsg= "MS JAHID PRINTER & AD"
+        var ScrollMsg= "Responsive ERP"
         var CharacterPosition=0;
         function StartScrolling() {
             document.title=ScrollMsg.substring(CharacterPosition,ScrollMsg.length)+

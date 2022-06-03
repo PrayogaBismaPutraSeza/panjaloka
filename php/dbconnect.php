@@ -2,10 +2,10 @@
 //error_reporting(0);
 ob_start();
 session_start();
-$siteName = "Cipet.in";
+$siteName = "Janaloka";
 
 //DEFINE("BASE_URL","http://cipetbhopal.com/");
-DEFINE("BASE_URL","http://localhost/rainbow/");
+DEFINE("BASE_URL","127.0.0.1");
 
 DEFINE ('DB_USER', 'root');
 DEFINE ('DB_PSWD', '');
