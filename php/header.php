@@ -32,7 +32,7 @@
 
 
                     <li>
-                        <a class="active-menu" href="index.php"><i class="fas fa-columns "></i>Dashboard</a>
+                        <a class="active-menu"  href="index.php"><i class="fas fa-columns "></i>Dashboard</a>
                     </li>
 
 					 <li>
@@ -43,17 +43,26 @@
                         <a href="home_customer.php"><i class="fa fa-user "></i>Customer</a>
                     </li>
 
-					 <li>
-                        <a href="home_employee.php"><i class="fa fa-users "></i>Employee</a>
+					 <li class="dropdown">
+                        <a><i class="fa fa-users "></i>Human Resource</a>
+                        <ul class="nav" >
+                            <li>
+                                <a  href="home_employee.php"><i class="fa fa-users "></i>Pegawai</a>
+                            </li>
+                            <li>
+                                <a  href="home_salaryRegular.php"><i class="fa fa-money "></i>Gaji</a>
+                            </li>
+                        </ul>                     
                     </li>
                     <li>
-                                 <a href="home_store.php"><i class="fa fa-box "></i>Store</a>
+                                 <a  href="home_store.php"><i class="fa fa-box "></i>Produk</a>
                              </li>
-                    <li>
-                                 <a href="home_salaryRegular.php"><i class="fa fa-money "></i>Salary</a>
-                             </li>
+                 
 					<li>
-                        <a href="home_payment.php"><i class="fa fa-inr "></i>Payment</a>
+                        <a  href="home_payment.php"><i class="fa fa-inr "></i>Payment</a>
+                    </li>
+                    <li>
+                        <a  href="home_report.php"><i class="fa fa-inr "></i>Laporan</a>
                     </li>
 					 <li>
                         <a href="home_bill.php"><i class="fa fa-file-text "></i>Bill </a>
