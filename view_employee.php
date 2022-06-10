@@ -24,13 +24,13 @@ include("php/headerCompany.php");
 <div class="row">
     <div class="col-md-12">
         <h1 class="page-head-line"><?php echo $name; ?></h1>
-        <h1 class="page-subhead-line">Welcome to <strong><?php echo ' '. $siteName ?></strong> Today is:
+        <h1 class="page-subhead-line">Selamat Datang di <strong><?php echo ' '. $siteName ?></strong>
         <i class="icon-calendar icon-large" ></i>
 
 
         <?php
         date_default_timezone_set("Asia/Jakarta");
-        echo  date(" l, F d, Y") . "<br>";
+        echo  date(" l, F d Y") . "<br>";
 
         ?>
          </h1>
@@ -52,35 +52,35 @@ include("php/headerCompany.php");
                 <input name="id" type="hidden" value="<?php echo $row['emp_id'];?>" />
 
                   <div class="form-group">
-                    <label class="col-sm-5 control-label">Firstname  :</label>
+                    <label class="col-sm-5 control-label">Nama Depan  :</label>
                     <div class="col-sm-4">
                       <input type="text" name="fname" class="form-control" value="<?php echo $row['fname'];?>" required="required">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-5 control-label">Lasttname  :</label>
+                    <label class="col-sm-5 control-label">Nama Belakang  :</label>
                     <div class="col-sm-4">
                       <input type="text" name="lname" class="form-control" value="<?php echo $row['lname'];?>" required="required">
                     </div>
                   </div>
                   <div class="form-group">
-                      <label class="col-sm-5 control-label">Mobile No  :</label>
+                      <label class="col-sm-5 control-label">No Hp :</label>
                       <div class="col-sm-4">
                           <input type="text" name="mobile" class="form-control" value="<?php echo $row['mobileNo'];?>" required="required">
                       </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-5 control-label">Gender  :</label>
+                    <label class="col-sm-5 control-label">Jenis Kelamin  :</label>
                     <div class="col-sm-4">
                     <select name="gender" class="form-control" required>
                       <option value="<?php echo $row['gender'];?>"><?php echo $row['gender'];?></option>
-                      <option value="Male">Male</option>
-                      <option value="Female">Female</option>
+                      <option value="Pria">Pria</option>
+                      <option value="Wanita">Wanita</option>
                     </select>
                   </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-5 control-label">Employee Type  :</label>
+                    <label class="col-sm-5 control-label">Tipe Pegawai  :</label>
                     <div class="col-sm-4">
                       <select name="emp_type" class="form-control" required>
                         <option value="<?php echo $row['emp_type'];?>"><?php echo $row['emp_type'];?></option>
@@ -91,7 +91,7 @@ include("php/headerCompany.php");
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-5 control-label">Department  :</label>
+                    <label class="col-sm-5 control-label">Departmen  :</label>
                     <div class="col-sm-4">
                       <select name="division" class="form-control" placeholder="Division" required>
                         <option value="<?php echo $row['division'];?>"><?php echo $row['division'];?></option>

@@ -17,13 +17,13 @@ include("php/headerCompany.php");
 <div class="row">
     <div class="col-md-12">
         <h1 class="page-head-line">Supplier</h1>
-        <h1 class="page-subhead-line">Welcome to <strong><?php echo ' '. $siteName ?></strong> Today is:
+        <h1 class="page-subhead-line">Selamat Datang di <strong><?php echo ' '. $siteName ?></strong>
         <i class="icon-calendar icon-large" ></i>
 
 
         <?php
         date_default_timezone_set("Asia/Jakarta");
-        echo  date(" l, F d, Y") . "<br>";
+        echo  date(" l, F d Y") . "<br>";
 
         ?>
          </h1>
@@ -34,8 +34,8 @@ include("php/headerCompany.php");
     <div class="well bs-component">
         <form class="form-horizontal">
             <fieldset>
-                <button type="button" data-toggle="modal" data-target="#addCompany" class="btn btn-success">Add New Supplier</button>
-                <p align="center"><big><b>List of Suppliers</b></big></p>
+                <button type="button" data-toggle="modal" data-target="#addCompany" class="btn btn-success">Tambah  Supplier</button>
+                <p align="center"><big><b>Daftar Suppliers</b></big></p>
                 <div class="table-responsive">
                     <form method="post" action="" >
 
@@ -43,10 +43,10 @@ include("php/headerCompany.php");
                             <!-- <h3><b>Ordinance</b></h3> -->
                             <thead>
                             <tr class="info">
-                                <th><p align="center">Name/Phone Number</p></th>
-                                <th><p align="center">Address</p></th>
-                                <th><p align="center">details</p></th>
-                                <th><p align="center">Action</p></th>
+                                <th><p align="center">Nama/No Hp</p></th>
+                                <th><p align="center">Alamat</p></th>
+                                <th><p align="center">detail</p></th>
+                                <th><p align="center">Aksi</p></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -73,8 +73,8 @@ include("php/headerCompany.php");
                                     <td align="center"><a href="view_company.php?id=<?php echo $row["id"]; ?>" title="Update"><?php echo $row['address'] ?></a></td>
                                     <td align="center"><a href="view_company.php?id=<?php echo $row["id"]; ?>" title="Update"><?php echo $row['details'] ?></a></td>
                                     <td align="center" width="200">
-                                        <a class="btn btn-primary" href="view_groupList.php?id=<?php echo $row["id"]; ?>">Group List</a>
-                                        <a class="btn btn-danger" href="deletecompany.php?id=<?php echo $row["id"]; ?>">Delete</a>
+                                        <a class="btn btn-primary" href="view_groupList.php?id=<?php echo $row["id"]; ?>">Daftar Grup</a>
+                                        <a class="btn btn-danger" href="deletecompany.php?id=<?php echo $row["id"]; ?>">Hapus</a>
                                     </td>
                                 </tr>
 
@@ -82,10 +82,10 @@ include("php/headerCompany.php");
                             </tbody>
 
                             <tr class="info">
-                                <th><p align="center">Name/Phone Number</p></th>
-                                <th><p align="center">Address</p></th>
-                                <th><p align="center">details</p></th>
-                                <th><p align="center">Action</p></th>
+                                <th><p align="center">Nama/No Hp</p></th>
+                                <th><p align="center">Alamat</p></th>
+                                <th><p align="center">detail</p></th>
+                                <th><p align="center">Aksi</p></th>
                             </tr>
                         </table>
                     </form>
@@ -102,33 +102,33 @@ include("php/headerCompany.php");
             <div class="modal-content">
                 <div class="modal-header" style="padding:20px 50px;">
                     <button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
-                    <h3 align="center"><b>Add Supplier</b></h3>
+                    <h3 align="center"><b>Tambah Supplier</b></h3>
                 </div>
                 <div class="modal-body" style="padding:40px 50px;">
 
                     <form class="form-horizontal" action="#" name="form" method="post">
                         <div class="form-group">
-                            <label class="col-sm-4 control-label">Supplier Name</label>
+                            <label class="col-sm-4 control-label">Nama Supplier</label>
                             <div class="col-sm-8">
-                                <input type="text" name="name" class="form-control" placeholder="Supplier name" required="required">
+                                <input type="text" name="name" class="form-control" placeholder="Nama Supplier" required="required">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label">Address</label>
+                            <label class="col-sm-4 control-label">Alamat</label>
                             <div class="col-sm-8">
-                                <input type="textarea" rows="4" cols="50" name="address" class="form-control" placeholder="Address" required="required">
+                                <input type="textarea" rows="4" cols="50" name="address" class="form-control" placeholder="Alamat" required="required">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label">Phone Number</label>
+                            <label class="col-sm-4 control-label">No Hp</label>
                             <div class="col-sm-8">
-                                <input type="text" name="mobile" class="form-control" placeholder="Phone Number" required="required">
+                                <input type="text" name="mobile" class="form-control" placeholder="No Hp" required="required">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label">Details</label>
+                            <label class="col-sm-4 control-label">Detail</label>
                             <div class="col-sm-8">
-                                <input type="textarea" rows="4" cols="30" name="details" class="form-control" placeholder="Supplier Details" required="required">
+                                <input type="textarea" rows="4" cols="30" name="details" class="form-control" placeholder="Detail Supplier" required="required">
                             </div>
                         </div>
 
@@ -136,8 +136,8 @@ include("php/headerCompany.php");
                         <div class="form-group">
                             <label class="col-sm-4 control-label"></label>
                             <div class="col-sm-8">
-                                <input type="submit" name="submit" class="btn btn-success" value="Submit">
-                                <input type="reset" name="" class="btn btn-danger" value="Clear Fields">
+                                <input type="submit" name="submit" class="btn btn-success" value="Tambahkan">
+                                <input type="reset" name="" class="btn btn-danger" value="Kosongkan Form">
                             </div>
                         </div>
                     </form>

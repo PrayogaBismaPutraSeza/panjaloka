@@ -3,7 +3,7 @@
             <div class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        Yearly Transactions Report</h3>
+                    Laporan Transaksi Tahunan</h3>
                     <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
                 </div>
                 <div class="panel-body">
@@ -25,7 +25,7 @@
                             }
 
                              ?>
-                            <a class="btn btn-primary btn-lg " align="center" href="home_cash.php"><strong>Total Cash : Rp.</strong> <?php echo $total_cash; ?> </a>
+                            <a class="btn btn-primary btn-lg " align="center" href="home_cash.php"><strong>Total Uang : Rp.</strong> <?php echo $total_cash; ?> </a>
 
                           </div>
 
@@ -53,7 +53,7 @@
                               $deduction = $deduction +$row["d_amount"];
                             }
                              ?>
-                            <a class="btn btn-primary btn-lg " align="center" href="dailyTransactions.php"><strong>Total Cost : Rp.</strong><?php echo $total_cost?> </a>
+                            <a class="btn btn-primary btn-lg " align="center" href="dailyTransactions.php"><strong>Total Uang : Rp.</strong><?php echo $total_cost?> </a>
 
                           </div>
                           <div class="col-sm-3 bg-info">
@@ -74,7 +74,7 @@
                             }
 
                              ?>
-                            <a class="btn btn-primary btn-lg " align="center" href="home_payment.php"><strong>Salary Paid : Rp.</strong><?php echo $total_salary."+".$deduction; ?> </a>
+                            <a class="btn btn-primary btn-lg " align="center" href="home_payment.php"><strong>Gaji dibayar   : Rp.</strong><?php echo $total_salary."+".$deduction; ?> </a>
 
                           </div>
                           <div class="col-sm-3 bg-info">
@@ -93,7 +93,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        <h1 class="page-subhead-line"><strong>Main Pages</strong>
+        <h1 class="page-subhead-line"><strong>Dashboard</strong>
 
          </h1>
 
@@ -115,7 +115,7 @@
           <div class="main-box mb-pink">
               <a href="home_employee.php">
                   <i class="fa fa-users fa-5x"></i>
-                  <h5>Employee</h5>
+                  <h5>Pegawai</h5>
               </a>
           </div>
     </div>
@@ -124,7 +124,7 @@
           <div class="main-box mb-dull">
               <a href="home_payment.php">
                   <i class="fa fa-inr fa-5x"></i>
-                  <h5>Payment</h5>
+                  <h5>Pembayaran</h5>
               </a>
           </div>
     </div>
@@ -133,7 +133,7 @@
         <div class="main-box mb-red">
               <a href="home_salaryRegular.php">
                   <i class="fa fa-money fa-5x"></i>
-                  <h5>Salary</h5>
+                  <h5>Gaji</h5>
               </a>
           </div>
     </div>
@@ -151,7 +151,7 @@
         <div class="main-box bg-primary">
             <a href="home_store.php">
                 <i class="fa fa-box fa-5x"></i>
-                <h5>Store</h5>
+                <h5>Toko</h5>
             </a>
         </div>
     </div>
@@ -163,7 +163,7 @@
 
 <div class="row">
   <div class="col-md-12">
-      <h1 class="page-subhead-line"><strong>Yearly 0ther Report</strong>
+      <h1 class="page-subhead-line"><strong>Laporan Tahunan Lainnya</strong>
   </div>
 
   <div class="col-9">
@@ -171,7 +171,7 @@
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            Total Salary Paid</h3>
+                        Total Gaji Dibayar</h3>
                         <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
                     </div>
                     <div class="panel-body">
@@ -201,7 +201,7 @@
                         <div class="panel panel-success">
                             <div class="panel-heading">
                                 <h3 class="panel-title">
-                                    Total Received Bill</h3>
+                                Total Bill</h3>
                                 <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
                             </div>
                             <div class="panel-body">
@@ -218,7 +218,7 @@
                               }
                               echo $total_received;
                                ?>
-                                received
+                                diterima
                                 </h5>
                                 </div>
                             </div>
@@ -228,7 +228,7 @@
                                 <div class="panel panel-success">
                                     <div class="panel-heading">
                                         <h3 class="panel-title">
-                                            Total Income</h3>
+                                            Total Penghasilan</h3>
                                         <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
                                     </div>
                                     <div class="panel-body">
@@ -271,7 +271,7 @@
                         }
                         echo $total_paid;
                          ?>
-                          paid
+                          Dibayar
                       </h5>
                       </div>
                     </div>

@@ -38,7 +38,7 @@ $error = 'Invalid Username or Password';
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TPI Payment System</title>
+    <title>Panjala Grup</title>
 
     <!-- BOOTSTRAP STYLES-->
     <link href="css/bootstrap.css" rel="stylesheet" />
@@ -63,7 +63,7 @@ text-align:center;
                 <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
 
                             <div class="panel-body" style="background-color: #E2E2E2; margin-top:50px; border:solid 3px #0e0e0e;">
-							  <h3 class="myhead">TPI Payment System</h3>
+							  <h3 class="myhead">Panjala Grup</h3>
                                 <form role="form" action="login.php" method="post">
                                     <hr />
 									<?php
@@ -76,12 +76,12 @@ text-align:center;
 
                                      <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
-                                            <input type="text" class="form-control" placeholder="Your Username " name="username" required />
+                                            <input type="text" class="form-control" placeholder="Username " name="username" required />
                                         </div>
 
 									<div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                                            <input type="password" class="form-control"  placeholder="Your Password" name="password" required />
+                                            <input type="password" class="form-control"  placeholder="Password" name="password" required />
                                         </div>
 
                                     <div class="form-group">
@@ -91,7 +91,7 @@ text-align:center;
                                             </span>
                                      </div>
 
-                                     <button class="btn btn-primary" type= "submit" name="login">Login Now</button>
+                                     <button class="btn btn-primary" type= "submit" name="login">Login</button>
 
                                     </form>
                             </div>

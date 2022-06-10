@@ -61,6 +61,9 @@
 					<li>
                         <a  href="home_payment.php"><i class="fa fa-inr "></i>Payment</a>
                     </li>
+                    <li>
+                        <a  href="home_report.php"><i class="fa fa-inr "></i>Laporan</a>
+                    </li>
 					 <li>
                         <a href="home_bill.php"><i class="fa fa-file-text "></i>Bill </a>
                     </li>
