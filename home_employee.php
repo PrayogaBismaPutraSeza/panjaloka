@@ -51,10 +51,10 @@ include("php/headerEmployee.php");
                       <p align="center">Jenis Kelamin</p>
                     </th>
                     <th>
-                      <p align="center">Tipe Pegawai</p>
+                      <p align="center">Status Pegawai</p>
                     </th>
                     <th>
-                      <p align="center">Departemen</p>
+                      <p align="center">Divisi</p>
                     </th>
                     <th>
                       <p align="center">Tarif Gaji</p>
@@ -108,10 +108,10 @@ include("php/headerEmployee.php");
                     <p align="center">Jenis Kelamin</p>
                   </th>
                   <th>
-                    <p align="center">Tipe Pegawai</p>
+                    <p align="center">Status Pegawai</p>
                   </th>
                   <th>
-                    <p align="center">Departemen</p>
+                    <p align="center">Divisi</p>
                   </th>
                   <th>
                     <p align="center">Tarif Gaji</p>
@@ -173,13 +173,13 @@ include("php/headerEmployee.php");
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-4 control-label">Employee Type</label>
+                <label class="col-sm-4 control-label">Status Pegawai</label>
                 <div class="col-sm-8">
-                  <select name="emp_type" class="form-control" placeholder="Tipe Pegawai" required>
-                    <option value="">Tipe Pegawai</option>
-                    <option value="Job Order">Job Order</option>
-                    <option value="Regular">Regular</option>
-                    <option value="Casual">Casual</option>
+                  <select name="emp_type" class="form-control" placeholder="Status Pegawai" required>
+                    <option value="">Status Pegawai</option>
+                    <option value="Tetap">Tetap</option>
+                    <option value="Freelance">Freelance</option>
+                    <option value="Kontrak">Kontrak</option>
                   </select>
                 </div>
               </div>
@@ -190,13 +190,13 @@ include("php/headerEmployee.php");
                     <option value="">Divisi</option>
                     <option value="Admin">Admin</option>
                     <option value="Human Resource">Human Resource</option>
-                    <option value="Accounting">Accounting</option>
+                    <option value="Gudang">Gudang</option>
                     <option value="Engineering">Engineering</option>
-                    <option value="MIS">MIS</option>
+                    <option value="Produksi">Produksi</option>
                     <option value="Supply">Supply</option>
                     <option value="Maintenance">Maintenance</option>
                     <option value="Control">Control</option>
-                    <option value="Control">Others</option>
+                    <option value="Lainnya">Lainnya</option>
                   </select>
                 </div>
               </div>

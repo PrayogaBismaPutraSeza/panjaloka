@@ -37,8 +37,8 @@ include("php/headerSetting.php");
 				<?php
 				if (isset($_REQUEST['act']) &&  @$_REQUEST['act'] == '1') {
 					echo '<div class="alert alert-success">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Success!</strong> Password Change Successfully.
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<strong>Success!</strong> Password Change Successfully.
 </div>';
 				}
 				echo $error;
