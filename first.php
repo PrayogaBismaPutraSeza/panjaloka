@@ -8,6 +8,7 @@ $siteName = "Panjala Grup"
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,28 +23,24 @@ $siteName = "Panjala Grup"
     <!-- FOR DataTable -->
     <script>
         {
-            $(document).ready(function()
-            {
+            $(document).ready(function() {
                 $('#myTable').DataTable();
             });
         }
     </script>
     <script>
-        <!--
-        var ScrollMsg= "Panjala Grup"
-        var CharacterPosition=0;
+        var ScrollMsg = "Panjala Grup"
+        var CharacterPosition = 0;
+
         function StartScrolling() {
-            document.title=ScrollMsg.substring(CharacterPosition,ScrollMsg.length)+
+            document.title = ScrollMsg.substring(CharacterPosition, ScrollMsg.length) +
                 ScrollMsg.substring(0, CharacterPosition);
             CharacterPosition++;
-            if(CharacterPosition > ScrollMsg.length) CharacterPosition=0;
-            window.setTimeout("StartScrolling()",150); }
+            if (CharacterPosition > ScrollMsg.length) CharacterPosition = 0;
+            window.setTimeout("StartScrolling()", 150);
+        }
         StartScrolling();
-        // -->
-
-
-
-
+        // 
     </script>
 
 </head>

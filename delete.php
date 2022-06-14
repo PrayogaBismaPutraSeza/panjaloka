@@ -8,7 +8,7 @@
   {
     ?>
           <script>
-              alert('Employee successfully Deleted...');
+              alert('Data Karyawan Berhasil Dihapus');
               window.location.href='home_employee.php';
           </script>
       <?php

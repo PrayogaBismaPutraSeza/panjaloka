@@ -31,7 +31,7 @@
 
 
                     <li>
-                        <a class="active-menu" href="index.php"><i class="fas fa-columns "></i>Dashboard</a>
+                        <a href="index.php"><i class="fas fa-columns "></i>Dashboard</a>
                     </li>
 
                     <li>
@@ -70,7 +70,7 @@
 
 
                     <li>
-                        <a href="setting.php"><i class="fa fa-cogs "></i>Setting</a>
+                        <a class="active-menu" href="setting.php"><i class="fa fa-cogs "></i>Setting</a>
                     </li>
 
                     <li>
