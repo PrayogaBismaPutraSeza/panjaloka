@@ -74,7 +74,7 @@ include("php/headerCustomer.php");
                                     <td align="center"><a href="view_customer.php?id=<?php echo $row["id"]; ?>" title="Update"><?php echo $row['details'] ?></a></td>
                                     <td align="center" width="200">
                                         <a class="btn btn-primary" href="view_groupList.php?id=<?php echo $row["id"]; ?>">Group List</a>
-                                        <a class="btn btn-danger" href="deletecompany.php?id=<?php echo $row["id"]; ?>">Delete</a>
+                                        <a class="btn btn-danger" href="deletecustomer.php?id=<?php echo $row["id"]; ?>">Delete</a>
                                     </td>
                                 </tr>
 

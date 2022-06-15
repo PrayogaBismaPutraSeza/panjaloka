@@ -65,7 +65,7 @@
                 }
 
                 ?>
-                <a class="btn btn-primary btn-lg " align="center" href="home_payment.php"><strong>Gaji dibayar : Rp.</strong><?php echo $total_salary . "+" . $deduction; ?> </a>
+                <a class="btn btn-primary btn-lg " align="center" href="home_payment.php"><strong>Gaji dibayar : Rp.</strong><?php echo $total_salary + $deduction; ?> </a>
 
               </div>
               <div class="col-sm-3 bg-info">
