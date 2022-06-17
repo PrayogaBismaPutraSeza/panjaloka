@@ -76,7 +76,7 @@ include("add_deductionRegular.php");
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Bonus  :</label>
                             <div class="col-sm-3">
-                                <input type="text" name="bonus" class="form-control" value="<?php echo $row3['bonus'];?>" required="required">
+                                <input type="text" name="bonus" class="form-control" value="<?php echo $row2['bonus'];?>" required="required">
                             </div>
                         </div>
                         <div class="form-group">

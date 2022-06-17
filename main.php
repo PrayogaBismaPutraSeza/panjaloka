@@ -23,7 +23,7 @@
                 }
 
                 ?>
-                <a class="btn btn-primary btn-lg " align="center" href="home_cash.php"><strong>Total Uang : Rp.</strong> <?php echo $total_cash; ?> </a>
+                <a class="btn btn-primary btn-lg " align="center" href="home_cash.php"><strong>Total Uang Perusahaan : Rp.</strong> <?php echo $total_cash; ?> </a>
 
               </div>
 
@@ -47,7 +47,7 @@
                   $deduction = $deduction + $row["d_amount"];
                 }
                 ?>
-                <a class="btn btn-primary btn-lg " align="center" href="dailyTransactions.php"><strong>Total Uang : Rp.</strong><?php echo $total_cost ?> </a>
+                <a class="btn btn-primary btn-lg " align="center" href="dailyTransactions.php"><strong>Total Pengeluaran : Rp.</strong><?php echo $total_cost ?> </a>
 
               </div>
               <div class="col-sm-3 bg-info">
@@ -61,15 +61,15 @@
                 $query  = "SELECT d_amount from deductions";
                 $q = $conn->query($query);
                 while ($row = $q->fetch_assoc()) {
-                  $total_salary = $total_salary + $row["d_amount"];
+                  $deduction = $deduction + $row["d_amount"];
                 }
 
                 ?>
-                <a class="btn btn-primary btn-lg " align="center" href="home_payment.php"><strong>Gaji dibayar : Rp.</strong><?php echo $total_salary + $deduction; ?> </a>
+                <a class="btn btn-primary btn-lg " align="center" href="home_salaryRegular.php"><strong>Gaji dibayar : Rp.</strong><?php echo $total_salary; ?> </a>
 
               </div>
               <div class="col-sm-3 bg-info">
-                <a class="btn btn-primary btn-lg w-600" align="center" href="#"><strong>Extra : Rp.</strong> <?php echo $total_cash - $total_cost; ?> </a>
+                <a class="btn btn-primary btn-lg w-600" align="center" href="#"><strong>Extra : Rp.</strong> <?php echo $total_cash - ($total_cost+$total_salary); ?> </a>
 
               </div>
             </div>

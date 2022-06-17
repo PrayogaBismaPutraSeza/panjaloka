@@ -3,7 +3,7 @@
 
 
 
-$query  = "SELECT * from deductions WHERE deduction_id='1'";
+$query  = "SELECT * from product WHERE p_id='1'";
 $q = $conn->query($query);
 while($row = $q->fetch_assoc())
   {
@@ -62,16 +62,16 @@ while($row = $q->fetch_assoc())
                 </div>
 
                   <div class="form-group">
-                      <label class="col-sm-5 control-label">Qunatity :</label>
+                      <label class="col-sm-5 control-label">Quantity :</label>
                       <div class="col-sm-4">
-                          <input type="number" id="stock_quantity" name="quantity" class="form-control" value="<?php echo $quantity;?>" required="required" readonly >
+                          <input type="number" id="stock_quantity" name="stock_quantity" class="form-control" value="<?php echo $row['stock'];?>" required="required" readonly >
                       </div>
                   </div>
                   <div class="form-group">
                       <label class="col-sm-5 control-label">Select Operation:</label>
                       <div class="col-sm-4">
-                          <input type="radio" id="Operation" name="stock_operation"  value="add">Add &nbsp;&nbsp;&nbsp;&nbsp;
-                          <input type="radio" id="Operation" name="stock_operation" value="sub">Substract
+                          <input type="radio" id="stock_operation" name="stock_operation"  value="add">Add &nbsp;&nbsp;&nbsp;&nbsp;
+                          <input type="radio" id="stock_operation" name="stock_operation" value="sub">Substract
 
 
                       </div>
@@ -85,7 +85,7 @@ while($row = $q->fetch_assoc())
                   <div class="form-group">
                       <label class="col-sm-5 control-label">Result :</label>
                       <div class="col-sm-4">
-                          <input type="number" id="result" name="output" class="form-control" readonly>
+                          <input type="number" id="result" name="result" class="form-control" readonly>
                       </div>
                   </div>
 

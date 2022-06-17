@@ -61,7 +61,7 @@
                         <a href="home_payment.php"><i class="fa fa-inr "></i>Payment</a>
                     </li>
                     <li>
-                        <a class="active-menu" href="home_bill.php"><i class="fa fa-file-text "></i>Bill </a>
+                        <a class="active-menu" href="home_sell.php"><i class="fa fa-file-text "></i>Bill </a>
                     </li>
 
 

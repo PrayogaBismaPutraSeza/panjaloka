@@ -71,7 +71,7 @@ while($row = $q->fetch_assoc())
                       </div>
                   </div>
                   <div class="form-group">
-                      <label class="col-sm-5 control-label">Qunatity :</label>
+                      <label class="col-sm-5 control-label">Quantity :</label>
                       <div class="col-sm-4">
                           <input type="text" name="quantity" class="form-control" value="<?php echo $row['p_quantity'];?>" required="required">
                       </div>
@@ -82,7 +82,7 @@ while($row = $q->fetch_assoc())
                           <input type="text" name="price" class="form-control" value="<?php echo $row['price'];?>" required="required">
                       </div>
                   </div>
-
+                  
                   <div class="form-group">
                     <label class="col-sm-5 control-label"></label>
                     <div class="col-sm-4">
